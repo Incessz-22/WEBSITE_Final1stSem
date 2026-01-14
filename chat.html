@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pinas Sarap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero" id="home">
+   <nav class="navbar">
+  <div class="logo">
+    <span class="small">PINAS</span>
+    <span class="big">SARAP</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#recipes">Recipes</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+</nav>
+
+    <div class="hero-text">
+      <h1>
+        From the kitchen to the heart, Filipino <br />
+        Food brings people together!
+      </h1>
+    </div>
+
+  </header>
+
+<!-- SIDE MENU -->
+<div class="sidebar" id="sidebar">
+  <span class="close-btn" onclick="document.getElementById('sidebar').classList.remove('open')">&times;</span>
+  <a href="#home" onclick="document.getElementById('sidebar').classList.remove('open')">Home</a>
+  <a href="#recipes" onclick="document.getElementById('sidebar').classList.remove('open')">Recipes</a>
+  <a href="#about" onclick="document.getElementById('sidebar').classList.remove('open')">About</a>
+  <a href="#contact" onclick="document.getElementById('sidebar').classList.remove('open')">Contact</a>
+</div>
+
+  <section class="featured" id="recipes">
+
+  <div class="recipe-header">
+    <h1>Recipes</h1>
+  </div>
+
+  <button class="arrow left">&#10094;</button>
+  <button class="arrow right">&#10095;</button>
+
+  <div class="recipe-slider">
+
+    <!-- RECIPE 1 -->
+    <div class="recipe active">
+      <div class="featured-content">
+        <div class="featured-text">
+          <h2>ADOBO</h2>
+          <p>Adobo is one of the most well-known Filipino dishes, often considered the unofficial national dish of the Philippines.</p>
+          <button class="recipe-btn" data-recipe="adobo">VIEW RECIPE</button>
+        </div>
+        <div class="featured-image">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.3wNoHoYlxzSmW7GxmiWe0gHaKw?w=728&h=1057&rs=1&pid=ImgDetMain&o=7&rm=3">
+        </div>
+      </div>
+    </div>
+
+    <!-- RECIPE 2 -->
+    <div class="recipe">
+      <div class="featured-content">
+        <div class="featured-text">
+          <h2>SINIGANG</h2>
+          <p>A sour and savory soup loved by Filipino families.</p>
+          <button class="recipe-btn" data-recipe="sinigang">VIEW RECIPE</button>
+        </div>
+        <div class="featured-image">
+          <img src="https://theskinnypot.com/wp-content/uploads/2023/07/Sinigang-na-Manok.jpg">
+        </div>
+      </div>
+    </div>
+
+    <!-- RECIPE 3 -->
+    <div class="recipe">
+      <div class="featured-content">
+        <div class="featured-text">
+          <h2>KARE-KARE</h2>
+          <p>A rich peanut-based stew often served on special occasions.</p>
+          <button class="recipe-btn" data-recipe="kare">VIEW RECIPE</button>
+        </div>
+        <div class="featured-image">
+          <img src="https://i.pinimg.com/originals/fe/b4/fd/feb4fdb47e6f33033c3735ca0555a33a.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Pinas Sarap</h2>
+  <p>Pinas Sarap is a celebration of Filipino cuisine, bringing traditional recipes to your kitchen with a modern twist.</p>
+  <p>Our mission is to preserve and share the rich culinary heritage of the Philippines, one delicious dish at a time.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Have questions or feedback? We'd love to hear from you!</p>
+  <p>Email: info@pinasarap.com</p>
+  <p>Phone: (123) 456-7890</p>
+  <p>Address: Manila, Philippines</p>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
